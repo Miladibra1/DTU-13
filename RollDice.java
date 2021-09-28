@@ -1,8 +1,8 @@
 public class RollDice {
     public static void main(String[] args) {
 
-        int playerA[] = new int[10];
-        int playerB[] = new int[10];
+        int playerA[] = new int[50];
+        int playerB[] = new int[50];
         int playerAScore = 0;
         int playerBScore = 0;
         int round = 1;
@@ -21,7 +21,7 @@ public class RollDice {
             else if (playerA[i] > playerB[i]) {
                 playerAScore = playerAScore + 5;
             }
-            else if (playerB[i] > playerB[i]) {
+            else if (playerB[i] > playerA[i]) {
                 playerBScore = playerBScore + 5;
             }
             if(playerAScore >= 40 || playerBScore >= 40) {
