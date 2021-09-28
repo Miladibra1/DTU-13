@@ -21,7 +21,7 @@ public class RollDice {
             else if (playerA[i] > playerB[i]) {
                 playerAScore = playerAScore + 5;
             }
-            else if (playerB[i] > playerB[i]) {
+            else if (playerB[i] > playerA[i]) {
                 playerBScore = playerBScore + 5;
             }
             if(playerAScore >= 40 || playerBScore >= 40) {
