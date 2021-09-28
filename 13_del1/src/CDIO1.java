@@ -2,5 +2,4 @@ public class CDIO1 {
     public static void main(String[] args) {
         System.out.println("hello world");
     }
-}
-wrfeilfhfwiuehq
+}g45g454g4
