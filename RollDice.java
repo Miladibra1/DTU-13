@@ -197,3 +197,58 @@ public class RollADice {
 
 
 
+
+
+
+
+____---------------------------------------________________________-----------------------------------___________________________-----------------------------
+    
+    
+    import java.util.Scanner;
+
+public class Jam {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Slå terningerne");
+        int spiller1, spiller2;
+        spiller1 = 0;
+        spiller2 = 0;
+        int Die1, Die2, Die3, Die4;
+        int sum1, sum2;
+
+        while (spiller1 <= 40 || spiller2 <= 40) {
+            Die1 = (int) (Math.random() * 6) + 1;
+            Die2 = (int) (Math.random() * 6) + 1;
+            Die3 = (int) (Math.random() * 6) + 1;
+            Die4 = (int) (Math.random() * 6) + 1;
+            sum1 = (Die1 + Die2);
+            sum2 = (Die3 + Die4);
+
+            spiller1 += sum1;
+            spiller2 += sum2;
+
+            System.out.println("Spiller1 får i sine 2 kast en samlet værdi på: " + sum1);
+            System.out.println("Spiller2 får i sine 2 kast en samlet værdi på: " + sum2);
+
+            if (sum1 > sum2) {
+                System.out.println(sum1 + " Er større end " + sum2 + " og derfor vinder Spiller1 denne runde, han har nu " + spiller1 + " point i spillet, mens spiller2 har " + spiller2 + " point");
+            }
+            if (sum2 > sum1) {
+                System.out.println(sum2 + " Er større end " + sum1 + " og derfor vinder Spiller2 denne runde, han har nu " + spiller2 + " point i spillet, mens spiller1 har " + spiller1 + " point");
+            }
+            if (sum1 == sum2) {
+                System.out.println(sum1 + " Er lig med " + sum2 + ", og denne runde bliver altså til et uafgjort, nu har spiller1 " + spiller1 + " point, mens spiller2 har " + spiller2 + " point");
+            }
+            if (sum1 >= 40) {
+                System.out.println("SPILLER 1 ER VINDEREN!");
+            }
+            if (sum2 >= 40) {
+                System.out.println("SPILLER 2 ER VINDEREN!");
+            }
+        }
+    }
+}
+
+
+
