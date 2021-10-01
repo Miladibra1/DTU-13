@@ -52,3 +52,49 @@ public class Jam {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+1000 gange test
+
+
+
+public class Test {
+    public static void main(String[] args) {
+        int Terning1 = 0;
+        int Terning2 = 0;
+        int Terning3 = 0;
+        int Terning4 = 0;
+        int Terning5 = 0;
+        int Terning6 = 0;
+        for (int i = 0; i <= 1000; i++) {
+            int Die1 = (int) (Math.random() * 6) + 1;
+            if (Die1 == 1) {
+                System.out.println(Terning1++);
+            }
+            if (Die1 == 2) {
+                System.out.println(Terning2++);
+            }
+            if (Die1 == 3) {
+                System.out.println(Terning3++);
+            }
+            if (Die1 == 4) {
+                System.out.println(Terning4++);
+            }
+            if (Die1 == 5) {
+                System.out.println(Terning5++);
+            }
+            if (Die1 == 6) {
+                System.out.println(Terning6++);
+            }
+        }
+    }
+}
+
