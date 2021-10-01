@@ -74,27 +74,33 @@ public class Test {
         int Terning4 = 0;
         int Terning5 = 0;
         int Terning6 = 0;
-        for (int i = 0; i <= 1000; i++) {
+        for (int i = 0; i < 1000; i++) {
             int Die1 = (int) (Math.random() * 6) + 1;
             if (Die1 == 1) {
-                System.out.println(Terning1++);
+                Terning1++;
             }
             if (Die1 == 2) {
-                System.out.println(Terning2++);
+                Terning2++;
             }
             if (Die1 == 3) {
-                System.out.println(Terning3++);
+                Terning3++;
             }
             if (Die1 == 4) {
-                System.out.println(Terning4++);
+                Terning4++;
             }
             if (Die1 == 5) {
-                System.out.println(Terning5++);
+                Terning5++;
             }
             if (Die1 == 6) {
-                System.out.println(Terning6++);
+                Terning6++;
             }
         }
+        System.out.println(Terning1);
+        System.out.println(Terning2);
+        System.out.println(Terning3);
+        System.out.println(Terning4);
+        System.out.println(Terning5);
+        System.out.println(Terning6);
+        System.out.println(Terning1 + Terning2+Terning3+Terning4+Terning5+ Terning6);
     }
 }
-
