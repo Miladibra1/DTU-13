@@ -140,8 +140,60 @@ public class CDIO_1ny{
 
 
 
+import java.util.Scanner;
+import java.util.SortedMap;
+
+public class RollADice {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Slå terningerne");
+        int player1Score, player2Score;
+        player1Score = 0;
+        player2Score = 0;
+        int sum1, sum2;
+
+        int Die1, Die2, Die3, Die4;
+        int runde = 1;
+
+        //player1Score = player1Score + Die1 + Die2;
+        while (true) {
+            Die1 = (int) (Math.random() * 6) + 1;
+            Die2 = (int) (Math.random() * 6) + 1;
+            Die3 = (int) (Math.random() * 6) + 1;
+            Die4 = (int) (Math.random() * 6) + 1;
+            sum1 = (player1Score + (Die1 + Die2));
+            sum2 = (player2Score + (Die3 + Die4));
+            System.out.println("Spiller1 får i sine 2 kast en samlet værdi på: " + sum1 + ", Spiller2 får i sine 2 kast en samlet værdi på: " + sum2);
+
+            player1Score = sum1;
+            player2Score = sum2;
+
+            System.out.println("-----------Runde "+runde+"----------------");
+            runde++;
+
+            if (sum1 > sum2) {
+                System.out.println(sum1 + " Er større end " + sum2 + " Derfor vinder Spiller1 denne runde");
+            } else if (sum2 > sum1) {
+                System.out.println(sum1 + " Er mindre end " + sum2 + " Derfor vinder Spiller2 denne runde");
+            } else if (sum1 == sum2) {
+                System.out.println(sum1 + " Er lig med " + sum2 + " Derfor bliver denne runde uafgjort");
+            }
+            if (sum1 >= 40 || sum2 >= 40) {
+                if (sum1 >= 40) {
+                    System.out.println("spiller1 har vundet");
+                }
+                else if (sum2 >= 40){
+                    System.out.println("spiller2 har vundet");
+                }
+                System.out.println("The game is over");
+                break;
+            }
+        }
+    }
+
+}
 
 
 
 
-ewfowebfoifnwqef
