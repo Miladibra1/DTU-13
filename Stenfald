@@ -9,6 +9,6 @@ public class Sten
         double tyngdeacceleration = 9.80665;
         double Faldtid = Math.sqrt((2*højde)/tyngdeacceleration);
         double sluthastighed = tyngdeacceleration*Faldtid;
-        System.out.println("Når højden er: " +højde+ " Så er faldtiden er altså: " + Faldtid+ " Og sluthastigheden er: " +sluthastighed);
+        System.out.println("Når højden er: " +højde+ " Så er faldtiden altså: " + Faldtid+ " mens, sluthastigheden er: " +sluthastighed);
     }
 }
