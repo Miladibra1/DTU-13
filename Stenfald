@@ -4,7 +4,7 @@ public class Sten
 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Giv mig en værdi for højden, og jeg beregner faldtiden for stenen.");
+        System.out.println("Giv mig en positiv værdi for højden, og jeg beregner faldtiden for stenen.");
         double højde = in.nextDouble();
         double tyngdeacceleration = 9.80665;
         double Faldtid = Math.sqrt((2*højde)/tyngdeacceleration);
