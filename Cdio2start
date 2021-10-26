@@ -1,0 +1,74 @@
+CLASS 1
+
+public class Die {
+    int Spiller1, Spiller2;
+    int die1, die2, die3, die4;
+    int sum1, sum2;
+
+
+    public void RollDice() {
+        this.die1 = (int) Math.random() * 6 + 1;
+        this.die2 = (int) Math.random() * 6 + 1;
+        this.die3 = (int) Math.random() * 6 + 1;
+        this.die4 = (int) Math.random() * 6 + 1;
+        Spiller1 = 1000;
+        Spiller2 = 1000;
+        this.sum1 = die1+die2;
+        this.sum2 = die3+die4;
+
+    }
+    public int getSum1() {
+        return this.sum1;
+    }
+
+    public int getSum2() {
+        return this.sum2;
+    }
+
+    public int getDie1() {
+        return this.die1;
+    }
+
+    public int getDie2() {
+        return this.die2;
+    }
+}
+
+
+
+CLASS 2
+
+public class Board {
+    int tower, crater, PalaceGates, ColdDesert, WalledCity, Monastery, BlackCave;
+    int HutsInTheMountain, TheWereWall, ThePit, Goldmine;
+
+    public void value() {
+        tower = 250;
+        crater = -100;
+        PalaceGates = 100;
+        ColdDesert = -20;
+        WalledCity = 180;
+        Monastery = 0;
+        BlackCave = -70;
+        HutsInTheMountain = 60;
+        TheWereWall = -80;
+        ThePit = -50;
+        Goldmine = 650;
+    }
+}
+
+
+CLASS 3
+
+import java.util.Scanner;
+
+public class TerningSpil
+{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+    }
+}
+
+
+
